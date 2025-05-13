@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "966999428412",
+    "project_id": "agenda-adbcb",
+    "storage_bucket": "agenda-adbcb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966999428412:android:2d974cab16b74c89d5a239",
+        "android_client_info": {
+          "package_name": "com.esau.poliagenda"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3ocvWznnRpYeQRXeLrmQloiiFH7zFHjg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Contactos.Agregar_Contacto">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/Uid_Usuario_C"
+            android:text="@string/Uid_Usuario_C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/agregar_contacto_bd">
+
+        </ImageView>
+
+        <!--Nombres-->
+        <EditText
+            android:layout_marginTop="10dp"
+            android:inputType="textPersonName"
+            android:id="@+id/Nombres_C"
+            android:hint="@string/Nombres_C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+        <!--Apellidos-->
+        <EditText
+            android:id="@+id/Apellidos_C"
+            android:hint="@string/Apellidos_C"
+            android:inputType="textPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+        <!--Correo-->
+        <EditText
+            android:id="@+id/Correo_C"
+            android:hint="@string/Correo_C"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+        <!--Telefono-->
+        <EditText
+            android:id="@+id/Telefono_C"
+            android:hint="@string/Telefono_C"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+        <!--Edad-->
+        <EditText
+            android:id="@+id/Edad_C"
+            android:hint="@string/Edad_C"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+        <!--Direccoion-->
+        <EditText
+            android:id="@+id/Direccion_C"
+            android:hint="@string/Direccion_C"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/Btn_Guardar_Contacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Btn_Guardar_Contacto">
+
+        </Button>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>
