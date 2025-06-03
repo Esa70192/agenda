@@ -42,7 +42,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class MenuPrinciapl extends AppCompatActivity {
 
-    Button AgregarNotas, ListarNotas, AcercaDe, CerrarSesion, Archivados, Contactos;
+    Button /*AgregarNotas,*/ ListarNotas, AcercaDe, CerrarSesion, Archivados, Contactos;
     FirebaseAuth firebaseAuth;
     FirebaseUser user;
 
@@ -86,7 +86,7 @@ public class MenuPrinciapl extends AppCompatActivity {
 
         Usuarios= FirebaseDatabase.getInstance().getReference("Usuarios");
 
-        AgregarNotas=findViewById(R.id.AgregarNotas);
+        //AgregarNotas=findViewById(R.id.AgregarNotas);
         ListarNotas=findViewById(R.id.ListarNotas);
         Archivados=findViewById(R.id.Archivados);
         Contactos=findViewById(R.id.Contactos);
@@ -107,7 +107,7 @@ public class MenuPrinciapl extends AppCompatActivity {
             }
         });
 
-        AgregarNotas.setOnClickListener(new View.OnClickListener() {
+       /* AgregarNotas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -119,7 +119,7 @@ public class MenuPrinciapl extends AppCompatActivity {
                 intent.putExtra("Correo", correo_usuario);
                 startActivity(intent);
             }
-        });
+        });*/
 
         ListarNotas.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -277,7 +277,7 @@ public class MenuPrinciapl extends AppCompatActivity {
                     CorreoPrincipal.setText(correo);
 
                     //Habilitar los botones del menu
-                    AgregarNotas.setEnabled(true);
+                    //AgregarNotas.setEnabled(true);
                     ListarNotas.setEnabled(true);
                     //Archivados.setEnabled(true);
                     //Contactos.setEnabled(true);
