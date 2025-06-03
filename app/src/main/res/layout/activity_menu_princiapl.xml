@@ -229,7 +229,7 @@
                     <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:src="@drawable/lista">
+                        android:src="@drawable/nota">
 
                     </androidx.appcompat.widget.AppCompatImageView>
 
@@ -268,7 +268,7 @@
                     <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:src="@drawable/archivados">
+                        android:src="@drawable/text_format">
 
                     </androidx.appcompat.widget.AppCompatImageView>
 
@@ -296,7 +296,7 @@
                     <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:src="@drawable/perfil">
+                        android:src="@drawable/clock">
 
                     </androidx.appcompat.widget.AppCompatImageView>
 
@@ -335,7 +335,7 @@
                     <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:src="@drawable/acerca_de">
+                        android:src="@drawable/info">
 
                     </androidx.appcompat.widget.AppCompatImageView>
 
@@ -363,7 +363,7 @@
                     <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:src="@drawable/salir">
+                        android:src="@drawable/exit">
 
                     </androidx.appcompat.widget.AppCompatImageView>
 

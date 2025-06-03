@@ -4,5 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name ="colorPrimary">#C2185B</color>
     <color name ="colorPrimaryDark">#880E4F</color>
-    <color name="cardPrincipal">#00BCD4</color>
+    <color name="cardPrincipal">#880E4F</color>
 </resources>
