@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -22,6 +23,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.esau.poliagenda.ActualizarNota.Actualizar_Nota;
+import com.esau.poliagenda.AgregarNotas.Agregar_Nota;
 import com.esau.poliagenda.Detalle.Detalle_Nota;
 import com.esau.poliagenda.Objetos.Nota;
 import com.esau.poliagenda.R;
@@ -39,7 +41,10 @@ import com.google.firebase.database.ValueEventListener;
 
 public class Listar_Notas extends AppCompatActivity {
 
+    Button btnAgregarNota;
     RecyclerView recyclerViewNotas;
+
+
     FirebaseDatabase firebaseDatabase;
     DatabaseReference BASE_DE_DATOS;
 
@@ -67,9 +72,10 @@ public class Listar_Notas extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
+        btnAgregarNota=findViewById(R.id.btnAgregarNota);
         recyclerViewNotas=findViewById(R.id.recyclerviewNotas);
         recyclerViewNotas.setHasFixedSize(true);
+
 
         auth=FirebaseAuth.getInstance();
         user=auth.getCurrentUser();
@@ -79,7 +85,20 @@ public class Listar_Notas extends AppCompatActivity {
         dialog=new Dialog(Listar_Notas.this);
         ListarNotasUsuarios();
 
+        btnAgregarNota.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String uid_usuario = user.getUid();
+                String correo_usuario = user.getEmail();
+                Intent intent = new Intent(Listar_Notas.this,Agregar_Nota.class);
+                intent.putExtra("Uid",uid_usuario);
+                intent.putExtra("Correo",correo_usuario);
+                startActivity(intent);
+            }
+        });
+
     }
+
     private void ListarNotasUsuarios(){
         //Consulta
         Query query=BASE_DE_DATOS.orderByChild("uid_usuario").equalTo(user.getUid());

@@ -14,5 +14,14 @@
         android:layout_height="match_parent">
 
     </androidx.recyclerview.widget.RecyclerView>
+    <Button
+        android:id="@+id/btnAgregarNota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar Nota"
+        android:layout_alignParentBottom="true" />
+
+
+
 
 </RelativeLayout>
