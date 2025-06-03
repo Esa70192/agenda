@@ -363,14 +363,6 @@
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
-        <ImageView
-            android:id="@+id/libros"
-            android:layout_width="200dp"
-            android:layout_gravity="center"
-            android:layout_height="200dp"
-            android:translationX="0dp"
-            app:srcCompat="@drawable/libros" />
-
     </androidx.appcompat.widget.LinearLayoutCompat>
 
 </ScrollView>
