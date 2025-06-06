@@ -42,7 +42,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class MenuPrinciapl extends AppCompatActivity {
 
-    Button  ListarNotas, AcercaDe, CerrarSesion, Archivados, Contactos;
+    Button  ListarNotas, AcercaDe, CerrarSesion, Archivados;
     FirebaseAuth firebaseAuth;
     FirebaseUser user;
 
@@ -89,7 +89,7 @@ public class MenuPrinciapl extends AppCompatActivity {
         //AgregarNotas=findViewById(R.id.AgregarNotas);
         ListarNotas=findViewById(R.id.ListarNotas);
         Archivados=findViewById(R.id.Archivados);
-        Contactos=findViewById(R.id.Contactos);
+        //Contactos=findViewById(R.id.Contactos);
         AcercaDe=findViewById(R.id.AcercaDe);
         CerrarSesion=findViewById(R.id.CerrarSesion);
 
@@ -124,17 +124,7 @@ public class MenuPrinciapl extends AppCompatActivity {
             }
         });
 
-        Contactos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //startActivity(new Intent(MenuPrinciapl.this, Perfil_Usuario.class));
-                //Toast.makeText(MenuPrinciapl.this, "Contactos", Toast.LENGTH_SHORT).show();
-                String uid_usuario=UidPrincipal.getText().toString();
-                Intent intent=new Intent(MenuPrinciapl.this, Listar_Contactos.class);
-                intent.putExtra("Uid", uid_usuario);
-                startActivity(intent);
-            }
-        });
+
 
         AcercaDe.setOnClickListener(new View.OnClickListener() {
             @Override

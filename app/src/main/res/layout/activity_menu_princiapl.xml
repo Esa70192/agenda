@@ -187,13 +187,38 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_marginTop="20dp"
-                android:layout_marginRight="100dp"
-                android:layout_marginLeft="150dp"
                 android:weightSum="2">
 
                 <!--OPCION 1-->
 
                 <!--OPCION 2-->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/text_format">
+
+                    </androidx.appcompat.widget.AppCompatImageView>
+
+                    <Button
+                        android:id="@+id/Archivados"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:enabled="false"
+                        android:text="@string/Bibliografia">
+
+                    </Button>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -227,71 +252,6 @@
             </androidx.appcompat.widget.LinearLayoutCompat>
 
             <!--3 - 4-->
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="20dp"
-                android:weightSum="2">
-
-                <!--OPCION 3-->
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_margin="5dp"
-                    android:orientation="vertical"
-                    android:gravity="center">
-
-                    <androidx.appcompat.widget.AppCompatImageView
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:src="@drawable/text_format">
-
-                    </androidx.appcompat.widget.AppCompatImageView>
-
-                    <Button
-                        android:id="@+id/Archivados"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:enabled="false"
-                        android:text="@string/Bibliografia">
-
-                    </Button>
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
-
-                <!--OPCION 4-->
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_margin="5dp"
-                    android:orientation="vertical"
-                    android:gravity="center">
-
-                    <androidx.appcompat.widget.AppCompatImageView
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:src="@drawable/clock">
-
-                    </androidx.appcompat.widget.AppCompatImageView>
-
-                    <Button
-                        android:id="@+id/Contactos"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:enabled="false"
-                        android:text="@string/Horario">
-
-                    </Button>
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
-
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
 
             <!--5 - 6-->
             <androidx.appcompat.widget.LinearLayoutCompat
