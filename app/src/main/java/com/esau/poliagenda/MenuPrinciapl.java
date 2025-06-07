@@ -25,10 +25,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.esau.poliagenda.AgregarNotas.Agregar_Nota;
-import com.esau.poliagenda.Contactos.Listar_Contactos;
 import com.esau.poliagenda.ListarNotas.Listar_Notas;
-import com.esau.poliagenda.NotasArchivadas.Notas_Archivadas;
+import com.esau.poliagenda.Referencias.Referencias;
 import com.esau.poliagenda.Perfil.Perfil_Usuario;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -42,7 +40,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class MenuPrinciapl extends AppCompatActivity {
 
-    Button  ListarNotas, AcercaDe, CerrarSesion, Archivados;
+    Button  ListarNotas, AcercaDe, CerrarSesion, Referencia;
     FirebaseAuth firebaseAuth;
     FirebaseUser user;
 
@@ -88,7 +86,7 @@ public class MenuPrinciapl extends AppCompatActivity {
 
         //AgregarNotas=findViewById(R.id.AgregarNotas);
         ListarNotas=findViewById(R.id.ListarNotas);
-        Archivados=findViewById(R.id.Archivados);
+        Referencia=findViewById(R.id.Referencia);
         //Contactos=findViewById(R.id.Contactos);
         AcercaDe=findViewById(R.id.AcercaDe);
         CerrarSesion=findViewById(R.id.CerrarSesion);
@@ -116,11 +114,11 @@ public class MenuPrinciapl extends AppCompatActivity {
             }
         });
 
-        Archivados.setOnClickListener(new View.OnClickListener() {
+        Referencia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MenuPrinciapl.this, Notas_Archivadas.class));
-                Toast.makeText(MenuPrinciapl.this, "Notas Archivadas", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(MenuPrinciapl.this, Referencias.class));
+                Toast.makeText(MenuPrinciapl.this, "Referencias", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -256,6 +254,7 @@ public class MenuPrinciapl extends AppCompatActivity {
                     //Habilitar los botones del menu
 
                     ListarNotas.setEnabled(true);
+                    Referencia.setEnabled(true);
                     //Archivados.setEnabled(true);
                     //Contactos.setEnabled(true);
                     AcercaDe.setEnabled(true);
