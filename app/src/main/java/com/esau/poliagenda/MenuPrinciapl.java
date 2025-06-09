@@ -25,8 +25,9 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.esau.poliagenda.DetalleReferencia.DetalleReferencia;
 import com.esau.poliagenda.ListarNotas.Listar_Notas;
-import com.esau.poliagenda.Referencias.Referencias;
+import com.esau.poliagenda.Listar_referencias.Listar_referencias;
 import com.esau.poliagenda.Perfil.Perfil_Usuario;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -117,7 +118,7 @@ public class MenuPrinciapl extends AppCompatActivity {
         Referencia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MenuPrinciapl.this, Referencias.class));
+                startActivity(new Intent(MenuPrinciapl.this, Listar_referencias.class));
                 Toast.makeText(MenuPrinciapl.this, "Referencias", Toast.LENGTH_SHORT).show();
             }
         });

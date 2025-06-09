@@ -1,4 +1,4 @@
-package com.esau.poliagenda.Referencias;
+package com.esau.poliagenda.DetalleReferencia;
 
 import android.os.Bundle;
 
@@ -11,13 +11,13 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.esau.poliagenda.R;
 
-public class Referencias extends AppCompatActivity {
+public class DetalleReferencia extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_referencias);
+        setContentView(R.layout.activity_detalle_referencia);
         ActionBar  actionBar= getSupportActionBar();
         actionBar.setTitle("Referencias");
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {

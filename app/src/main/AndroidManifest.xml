@@ -13,6 +13,9 @@
         android:theme="@style/Theme.PoliAgenda"
         tools:targetApi="31">
         <activity
+            android:name=".Listar_referencias.Listar_referencias"
+            android:exported="false" />
+        <activity
             android:name=".Contactos.Agregar_Contacto"
             android:exported="false" />
         <activity
@@ -28,7 +31,7 @@
             android:name=".Perfil.Perfil_Usuario"
             android:exported="false" />
         <activity
-            android:name=".Referencias.Referencias"
+            android:name=".DetalleReferencia.DetalleReferencia"
             android:exported="false" />
         <activity
             android:name=".ListarNotas.Listar_Notas"
