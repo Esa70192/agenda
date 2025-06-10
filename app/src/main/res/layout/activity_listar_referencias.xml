@@ -6,10 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".Listar_referencias.Listar_referencias">
 
-    <ListView
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/listaReferencia"
+        android:id="@+id/recyclerViewReferencias"
         android:scrollbars="vertical"
         android:layout_marginTop="12dp"
         tools:listitem="@layout/item_referencias"
