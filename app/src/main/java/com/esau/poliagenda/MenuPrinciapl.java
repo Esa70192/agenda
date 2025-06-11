@@ -26,6 +26,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.esau.poliagenda.DetalleReferencia.DetalleReferencia;
+//import com.esau.poliagenda.L_Horario.fragment_materias;
+import com.esau.poliagenda.L_Horario.MateriasActivity;
 import com.esau.poliagenda.ListarNotas.Listar_Notas;
 import com.esau.poliagenda.Listar_referencias.Listar_referencias;
 import com.esau.poliagenda.Perfil.Perfil_Usuario;
@@ -41,7 +43,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class MenuPrinciapl extends AppCompatActivity {
 
-    Button  ListarNotas, AcercaDe, CerrarSesion, Referencia;
+    Button  ListarNotas, /*AcercaDe*/ Horario, CerrarSesion, Referencia;
     FirebaseAuth firebaseAuth;
     FirebaseUser user;
 
@@ -89,7 +91,9 @@ public class MenuPrinciapl extends AppCompatActivity {
         ListarNotas=findViewById(R.id.ListarNotas);
         Referencia=findViewById(R.id.Referencia);
         //Contactos=findViewById(R.id.Contactos);
-        AcercaDe=findViewById(R.id.AcercaDe);
+        Horario=findViewById(R.id.Horario);
+        //AcercaDe=findViewById(R.id.AcercaDe);
+
         CerrarSesion=findViewById(R.id.CerrarSesion);
 
         firebaseAuth=FirebaseAuth.getInstance();
@@ -125,11 +129,19 @@ public class MenuPrinciapl extends AppCompatActivity {
 
 
 
-        AcercaDe.setOnClickListener(new View.OnClickListener() {
+        /*AcercaDe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //Toast.makeText(MenuPrinciapl.this, "Acerca De", Toast.LENGTH_SHORT).show();
                 Informacion();
+            }
+        });*/
+
+        Horario.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MenuPrinciapl.this, MateriasActivity.class));
+
             }
         });
 
@@ -258,7 +270,8 @@ public class MenuPrinciapl extends AppCompatActivity {
                     Referencia.setEnabled(true);
                     //Archivados.setEnabled(true);
                     //Contactos.setEnabled(true);
-                    AcercaDe.setEnabled(true);
+                    //AcercaDe.setEnabled(true);
+                    Horario.setEnabled(true);
                     CerrarSesion.setEnabled(true);
 
                 }

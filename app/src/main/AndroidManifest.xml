@@ -18,6 +18,8 @@
         <activity
             android:name=".Contactos.Agregar_Contacto"
             android:exported="false" />
+        <activity android:name=".L_Horario.MateriasActivity"
+            android:exported="false"/>
         <activity
             android:name=".Contactos.Listar_Contactos"
             android:exported="false" />
@@ -41,9 +43,6 @@
             android:exported="false" />
         <activity
             android:name=".MenuPrinciapl"
-            android:exported="false" />
-        <activity
-            android:name=".MenuPrincipal"
             android:exported="false" />
         <activity
             android:name=".Registro"

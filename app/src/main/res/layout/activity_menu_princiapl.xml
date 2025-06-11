@@ -278,8 +278,8 @@
                     </androidx.appcompat.widget.AppCompatImageView>
 
                     <Button
-                        android:id="@+id/AcercaDe"
-                        android:text="@string/AcercaDe"
+                        android:id="@+id/Horario"
+                        android:text="@string/Horario"
                         android:enabled="false"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
