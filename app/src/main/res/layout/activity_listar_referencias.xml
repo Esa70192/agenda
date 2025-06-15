@@ -12,7 +12,7 @@
         android:id="@+id/recyclerViewReferencias"
         android:scrollbars="vertical"
         android:layout_marginTop="12dp"
-        tools:listitem="@layout/item_referencias"
+
         android:divider="@android:color/transparent"
         android:dividerHeight="10.0sp"/>
 

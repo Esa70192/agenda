@@ -1,37 +1,36 @@
 package com.esau.poliagenda.Objetos.Materia;
 
 public class Referencias {
-    private String autor;
-    private String editorial;
+    private String Autor;
+    private String Editorial;
 
-    private String titulo;
+    private String Titulo;
 
     public Referencias() {
     }
 
-    public  Referencias(String autor, String editorial, String titulo) {
-        this.autor = autor;
-        this.editorial = editorial;
-        this.titulo = titulo;
+    public Referencias(String autor, String editorial, String titulo) {
+        Autor = autor;
+        Editorial = editorial;
+        Titulo = titulo;
     }
     public String getAutor() {
-        return autor;
+        return Autor;
     }
-
     public void setAutor(String autor) {
-        this.autor = autor;
+        Autor = autor;
     }
-
     public String getEditorial() {
-        return editorial;
+        return Editorial;
     }
     public void setEditorial(String editorial) {
-        this.editorial = editorial;
+        Editorial = editorial;
     }
     public String getTitulo() {
-        return titulo;
+        return Titulo;
     }
     public void setTitulo(String titulo) {
-        this.titulo = titulo;
+        Titulo = titulo;
     }
+
 }

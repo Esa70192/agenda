@@ -1,68 +1,72 @@
 package com.esau.poliagenda.Objetos.Materia;
 
 public class Materia {
-    private Horario horario1;
-    private Horario horario2;
+    private Horario Horario1;
 
-    private  String nombre;
+    private Horario Horario2;
 
-    private String profesor;
+    private  String Nombre;
 
-    private Referencias referencias;
+    private String Profesor;
 
-    private  String secuencia;
+    private Referencias Referencias;
+
+    private  String Secuencia;
 
     public Materia() {
     }
 
-    public Materia(Horario horario1, Horario horario2, String nombre, String profesor, Referencias referencias, String secuencia) {
-        this.horario1 = horario1;
-        this.horario2 = horario2;
-        this.nombre = nombre;
-        this.profesor = profesor;
-        this.referencias = referencias;
-        this.secuencia = secuencia;
-    }
+
 
     public Horario getHorario1() {
-        return horario1;
+        return Horario1;
     }
 
     public void setHorario1(Horario horario1) {
-        this.horario1 = horario1;
+        Horario1 = horario1;
     }
 
     public Horario getHorario2() {
-        return horario2;
+        return Horario2;
     }
 
     public void setHorario2(Horario horario2) {
-        this.horario2 = horario2;
+        Horario2 = horario2;
     }
 
     public String getNombre() {
-        return nombre;
+        return Nombre;
     }
+
     public void setNombre(String nombre) {
-        this.nombre = nombre;
+        Nombre = nombre;
     }
+
     public String getProfesor() {
-        return profesor;
+        return Profesor;
     }
+
     public void setProfesor(String profesor) {
-        this.profesor = profesor;
+        Profesor = profesor;
     }
+
     public Referencias getReferencias() {
-        return referencias;
+        return Referencias;
     }
     public void setReferencias(Referencias referencias) {
-        this.referencias = referencias;
+
+        Referencias = referencias;
     }
+
     public String getSecuencia() {
-        return secuencia;
+        return Secuencia;
     }
+
     public void setSecuencia(String secuencia) {
-        this.secuencia = secuencia;
+        Secuencia = secuencia;
     }
+
+
+
 
 }
