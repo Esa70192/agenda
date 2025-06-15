@@ -28,7 +28,7 @@
         <TextView
             android:layout_width="120dp"
             android:layout_height="30dp"
-            android:id="@+id/listName"
+            android:id="@+id/listUnidadAprendizaje"
             android:text="Unidad de"
             android:textSize="20sp"
             android:layout_marginTop="25dp"
@@ -38,12 +38,64 @@
         <TextView
             android:layout_width="80dp"
             android:layout_height="30dp"
-            android:id="@+id/listTime"
+            android:id="@+id/listSecuencia"
             android:text="#NM#"
             android:textSize="16sp"
-            android:layout_toEndOf="@id/listName"
+            android:layout_toEndOf="@id/listUnidadAprendizaje"
             android:layout_marginTop="25dp"
             android:layout_marginStart="100dp" />
+
+        <TextView
+            android:id="@+id/listbibliografia"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="25dp"
+            android:textSize="16sp"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/listprofesor"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="25dp"
+            android:textSize="16sp"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/listautor"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="25dp"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/listeditorial"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="25dp"
+            android:textSize="16sp"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/listTitulo"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="25dp"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/secuenciaData"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="25dp"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
 
     </RelativeLayout>
 

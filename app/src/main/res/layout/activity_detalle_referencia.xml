@@ -34,68 +34,7 @@
             android:src="@drawable/perfil_contacto"
             android:scaleType="centerCrop"/>
     </androidx.cardview.widget.CardView>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Secuencia:"
-        android:textStyle="bold"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="30dp"
-        android:textSize="18sp"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="1NM10"
-        android:layout_marginStart="10dp"
-        android:textSize="16sp"
-        android:id="@+id/detallesSecuencia"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Profesor:"
-        android:textStyle="bold"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:textSize="18sp"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Goytia"
-        android:layout_marginStart="10dp"
-        android:textSize="16sp"
-        android:id="@+id/detallesProfesor"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Horario:"
 
-        android:textStyle="bold"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:textSize="18sp"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Lunes 9-11"
-        android:layout_marginStart="10dp"
-        android:textSize="16sp"
-        android:id="@+id/detallesHorario"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Referencia:"
-
-        android:textStyle="bold"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:textSize="18sp"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Nose"
-        android:layout_marginStart="10dp"
-        android:textSize="16sp"
-        android:id="@+id/detallesReferencia"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -106,10 +45,51 @@
         android:layout_marginTop="20dp"
         android:textSize="18sp"/>
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Autor"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nose"
+        android:text="Goytia"
         android:layout_marginStart="10dp"
         android:textSize="16sp"
-        android:id="@+id/detallesbibliografia"/>
+        android:id="@+id/nombreAutor"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editorial"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Goytia"
+        android:layout_marginStart="10dp"
+        android:textSize="16sp"
+        android:id="@+id/nombreEditorial"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Título"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Goytia"
+        android:layout_marginStart="10dp"
+        android:textSize="16sp"
+        android:id="@+id/titulo"/>
+
+
 </LinearLayout>
