@@ -40,7 +40,7 @@ public class MateriaAdapter extends RecyclerView.Adapter<MateriaAdapter.ViewHold
     @Override
     public void onBindViewHolder(MateriaAdapter.ViewHolder holder, int position) {
         Materia m = lista.get(position);
-        holder.tvNombre.setText("Nombre: " + m.Nombre_);
+        holder.tvNombre.setText("Nombre: " + m.Nombre);
         holder.tvSecuencia.setText("Secuencia: " + m.Secuencia);
         holder.tvProfesor.setText("Profesor: " + m.Profesor);
         holder.tvHorario1.setText("Horario 1: " + m.Horario1.dia + " - " + m.Horario1.hora);

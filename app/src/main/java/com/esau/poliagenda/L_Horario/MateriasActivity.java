@@ -77,7 +77,7 @@ public class MateriasActivity extends AppCompatActivity {
                 listaMaterias.clear();
                 for (DataSnapshot ds : snapshot.getChildren()) {
                     String secuencia = ds.child("Secuencia").getValue(String.class);
-                    String nombre = ds.child("Nombre:").getValue(String.class);
+                    String nombre = ds.child("Nombre").getValue(String.class);
                     String profesor = ds.child("Profesor").getValue(String.class);
 
                     Horario h1 = ds.child("Horario1").getValue(Horario.class);
