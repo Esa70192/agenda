@@ -21,6 +21,9 @@ public class DetalleReferencia extends AppCompatActivity {
         setContentView(R.layout.activity_detalle_referencia);
         ActionBar  actionBar= getSupportActionBar();
         actionBar.setTitle("Bibliografía");
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(true);
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -41,5 +44,10 @@ public class DetalleReferencia extends AppCompatActivity {
         editorialTextView.setText(editorial);
         nombreTextView.setText(nombre);
 
+    }
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return super.onSupportNavigateUp();
     }
 }

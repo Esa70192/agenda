@@ -26,11 +26,12 @@
 
         <ImageView
             android:id="@+id/ipn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
             android:translationX="0dp"
             android:translationY="10dp"
-            app:srcCompat="@drawable/loginu" />
+            app:srcCompat="@drawable/login" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"

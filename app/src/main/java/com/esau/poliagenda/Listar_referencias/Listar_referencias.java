@@ -1,6 +1,7 @@
 package com.esau.poliagenda.Listar_referencias;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -50,6 +51,10 @@ public class Listar_referencias extends AppCompatActivity {
         setContentView(R.layout.activity_listar_referencias);
         recyclerViewReferencias = findViewById(R.id.recyclerViewReferencias);
         recyclerViewReferencias.setHasFixedSize(true);
+        ActionBar actionBar=getSupportActionBar();
+        actionBar.setTitle("Bibliografías");
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(true);
 
         auth = FirebaseAuth.getInstance();
         user = auth.getCurrentUser();
@@ -88,6 +93,11 @@ public class Listar_referencias extends AppCompatActivity {
                 Log.e("xd", "Error al leer datos: " + databaseError.getMessage());
             }
         });
+    }
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return super.onSupportNavigateUp();
     }
 
 }

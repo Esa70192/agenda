@@ -7,6 +7,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -36,6 +37,10 @@ public class MateriasActivity extends AppCompatActivity {
         spinner = findViewById(R.id.spinnerSemestres);
         recyclerView = findViewById(R.id.recyclerMaterias);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        ActionBar actionBar=getSupportActionBar();
+        actionBar.setTitle("Horario");
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(true);
 
         dbRef = FirebaseDatabase.getInstance().getReference("Materias");
 
@@ -93,6 +98,11 @@ public class MateriasActivity extends AppCompatActivity {
             @Override
             public void onCancelled(@NonNull DatabaseError error) {}
         });
+    }
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return super.onSupportNavigateUp();
     }
 }
 

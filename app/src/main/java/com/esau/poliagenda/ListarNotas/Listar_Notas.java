@@ -64,7 +64,7 @@ public class Listar_Notas extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_listar_notas);
         ActionBar actionBar=getSupportActionBar();
-        actionBar.setTitle("Mis notas");
+        actionBar.setTitle("Mis tareas");
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowHomeEnabled(true);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
