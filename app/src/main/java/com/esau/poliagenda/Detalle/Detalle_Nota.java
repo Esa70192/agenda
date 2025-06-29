@@ -29,7 +29,7 @@ public class Detalle_Nota extends AppCompatActivity {
         });
         ActionBar actionBar=getSupportActionBar();
         assert actionBar != null;
-        actionBar.setTitle("Detalle de nota");
+        actionBar.setTitle("Detalle de tarea");
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowHomeEnabled(true);
         InicializarVistar();

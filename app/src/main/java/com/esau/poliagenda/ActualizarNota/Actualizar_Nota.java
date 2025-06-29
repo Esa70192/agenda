@@ -56,7 +56,7 @@ public class Actualizar_Nota extends AppCompatActivity implements AdapterView.On
             return insets;
         });
         ActionBar actionBar=getSupportActionBar();
-        actionBar.setTitle("Actualizar Nota");
+        actionBar.setTitle("Actualizar Tarea");
         actionBar.setDisplayShowHomeEnabled(true);
         actionBar.setDisplayHomeAsUpEnabled(true);
 
