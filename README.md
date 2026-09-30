@@ -1,37 +1,90 @@
-# 📱 Agenda
+# 📱 Agenda Escolar
 
-Aplicación Android desarrollada en **Java** como proyecto para la gestión de tareas y organización del horario escolar.
+Aplicación Android desarrollada en **Java** y conectada a **Firebase**, pensada como una herramienta de apoyo para la organización de actividades escolares.
 
-La aplicación permite al usuario registrar las actividades que tiene pendientes, consultar sus tareas y actualizar su estado una vez que han sido realizadas. También cuenta con un apartado destinado a la consulta del horario escolar.
+La aplicación fue diseñada específicamente para la escuela en la que se realizó el proyecto (aunque podria adaptarse para cualquier institucion) con diferentes apartados para administrar tareas, consultar bibliografías y horarios escolares, así como gestionar información del perfil personal del usuario.
 
 ## ✨ Características
 
-* 📝 **Gestión de tareas**
+### 📝 Tareas
 
-  * Registrar nuevas tareas.
-  * Consultar las tareas pendientes.
-  * Cambiar el estado de una tarea a **finalizada**.
+El apartado de tareas permite a los estudiantes llevar un registro de las actividades que tienen que realizar.
 
-* 📚 **Horario escolar**
+Cada tarea contiene:
 
-  * Consultar las actividades correspondientes al horario escolar.
-  * Organizar las actividades académicas por horario.
+* **Título**
+* **Descripción**
+* **Fecha de entrega**
+* **Fecha de creación**
+* **Estado**
 
-* 📱 **Aplicación nativa para Android**
+Al crear una tarea:
 
-  * Interfaz desarrollada específicamente para dispositivos Android.
-  * Desarrollo realizado utilizando Java.
+* La **fecha de creación** se guarda automáticamente.
+* El estado se establece como **"No finalizado"** por defecto.
+
+El usuario puede:
+
+* Crear nuevas tareas.
+* Consultar las tareas creadas.
+* Actualizar la información de una tarea.
+* Cambiar el estado de una tarea a **"Finalizado"**.
+* Eliminar tareas.
+
+Una vez que una tarea cambia al estado **"Finalizado"**, este estado ya no puede modificarse.
+
+### 📚 Bibliografías
+
+Este apartado está pensado para que el **administrador de la aplicación** pueda recomendar libros y material bibliográfico relacionados con las diferentes materias.
+
+La idea es proporcionar a los estudiantes recursos que puedan utilizar como apoyo para sus estudios.
+
+Actualmente, las bibliografías no cuentan con un sistema específico de ordenamiento o clasificación.
+
+### 🕐 Horario
+
+El apartado de horario permite consultar el horario escolar correspondiente al semestre seleccionado.
+
+El administrador puede ingresar los horarios actuales de cada semestre y el usuario puede seleccionar el semestre que desea consultar.
+
+La información del horario incluye:
+
+* **Materia**
+* **Horario**
+* **Profesor**
+
+De esta manera, el estudiante puede consultar sus clases desde la aplicación.
+
+### 👤 Perfil personal
+
+El apartado de perfil permite al usuario agregar y administrar información personal.
+
+Los datos del perfil pueden ser:
+
+* Consultados por el propio usuario.
+* Editados cuando sea necesario.
+
+Originalmente, esta sección formaba parte de una idea más amplia para convertir la aplicación en una especie de **red social escolar**, donde los estudiantes pudieran comunicarse con sus compañeros.
+
+Sin embargo, esta funcionalidad no llegó a implementarse, por lo que actualmente el perfil funciona únicamente como un espacio para consultar y editar la información personal del usuario.
+
+## ☁️ Firebase
+
+La aplicación utiliza **Firebase** para proporcionar la funcionalidad de conexión y almacenamiento de información en línea.
+
+Esto permite que los datos utilizados por la aplicación puedan gestionarse de manera remota en lugar de almacenarse únicamente de forma local en el dispositivo.
 
 ## 🛠️ Tecnologías utilizadas
 
 * **Java** — Lenguaje principal de programación.
+* **Android** — Plataforma de la aplicación.
 * **Android Studio** — Entorno de desarrollo.
-* **Android SDK** — Desarrollo y ejecución de la aplicación Android.
+* **Firebase** — Servicios de backend y almacenamiento de datos.
 * **Gradle** — Sistema de construcción del proyecto.
 
 ## 📂 Estructura del proyecto
 
-El proyecto utiliza la estructura estándar de una aplicación Android:
+El proyecto sigue la estructura estándar de una aplicación Android:
 
 ```text
 agenda/
@@ -56,8 +109,9 @@ Para ejecutar el proyecto se necesita:
 
 * Android Studio.
 * Android SDK.
-* JDK compatible con la versión del proyecto.
+* JDK compatible con el proyecto.
 * Un dispositivo Android o un emulador.
+* Configuración de Firebase correspondiente al proyecto.
 
 ### Clonar el repositorio
 
@@ -71,50 +125,55 @@ Entrar al directorio:
 cd agenda
 ```
 
-Después, abrir el proyecto desde **Android Studio** y esperar a que Gradle sincronice las dependencias.
+Abrir el proyecto desde **Android Studio** y esperar a que Gradle sincronice las dependencias.
 
-### Ejecutar la aplicación
+### Ejecutar
 
-Se puede ejecutar utilizando:
+La aplicación puede ejecutarse utilizando:
 
-* Un dispositivo Android conectado mediante USB con la depuración USB habilitada.
-* Un dispositivo virtual creado mediante Android Studio.
+* Un dispositivo Android conectado mediante USB.
+* Un emulador configurado en Android Studio.
 
-Una vez seleccionado el dispositivo, utilizar **Run ▶** en Android Studio.
+Selecciona el dispositivo y ejecuta el proyecto mediante **Run ▶**.
 
-## 📋 Funcionamiento
-
-### Tareas
-
-La sección de tareas permite llevar un registro de las actividades que el usuario necesita realizar.
-
-Una tarea puede mantenerse como pendiente mientras no haya sido realizada y posteriormente cambiar su estado a **finalizada**.
-
-Esto permite utilizar la aplicación como una pequeña lista de tareas orientada principalmente a actividades escolares.
-
-### Horario escolar
-
-La aplicación también incluye una sección para consultar el horario escolar, permitiendo al usuario tener en un mismo lugar sus tareas y sus actividades académicas.
+> **Nota:** Debido a que la aplicación utiliza Firebase, es necesario contar con la configuración correspondiente de Firebase para que las funciones que dependen del servicio en línea funcionen correctamente.
 
 ## 🎯 Objetivo del proyecto
 
-El objetivo principal del proyecto fue desarrollar una aplicación Android utilizando **Java**, poniendo en práctica conceptos de desarrollo móvil, diseño de interfaces y manejo de información dentro de una aplicación.
+El proyecto fue creado con el propósito de desarrollar una aplicación orientada a las necesidades de los estudiantes de una institución educativa.
 
-El proyecto también sirve como ejercicio para comprender la estructura de una aplicación Android y el funcionamiento de sus diferentes componentes.
+La idea principal era concentrar en una sola aplicación diferentes herramientas relacionadas con la vida escolar:
+
+* Organización de tareas.
+* Consulta de horarios.
+* Recomendaciones bibliográficas.
+* Información personal.
+* Una posible comunicación entre estudiantes.
+
+Aunque algunas de las ideas iniciales, como la red social escolar, no fueron implementadas, la aplicación cuenta con los módulos principales para la organización académica.
+
+## 🔮 Posibles mejoras
+
+Entre las funcionalidades que podrían incorporarse en futuras versiones se encuentran:
+
+* Clasificación de bibliografías por materia.
+* Búsqueda de libros.
+* Mejor organización de los recursos bibliográficos.
+* Sistema de comunicación entre estudiantes.
+* Perfiles públicos para los usuarios.
+* Notificaciones para recordar fechas de entrega.
+* Mejoras en la interfaz de usuario.
+* Nuevas herramientas para la organización académica.
 
 ## 📌 Estado del proyecto
 
-Proyecto desarrollado como práctica de programación y desarrollo de aplicaciones Android.
+Proyecto desarrollado como práctica de **desarrollo de aplicaciones Android utilizando Java y Firebase**, orientado a la gestión y organización de información escolar.
 
-Actualmente se conserva como proyecto de aprendizaje y referencia.
+Algunas de las funcionalidades planteadas originalmente, como la comunicación entre estudiantes, quedaron fuera del alcance de la versión desarrollada.
 
 ## 👤 Autor
 
 **Esa70192**
 
 GitHub:
-https://github.com/Esa70192
-
-## 📄 Licencia
-
-Este proyecto se encuentra disponible en GitHub para fines educativos y de aprendizaje.
+https://github.com/Esa70192/agenda
